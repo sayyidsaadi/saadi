@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+section > h2,
+h5 {
+  @apply text-text-light;
+}
+section > h2 {
+  @apply mb-6;
+}
+section {
+  @apply p-4;
+}
+h2 {
+}
+h5 {
+}
+
+/* .btn-primary {
+  @apply py-2 px-6 bg-color-primary rounded-md font-light text-text-light hover:bg-color-primary-variant transition-all duration-500;
+} */
+
+.btn-primary {
+  @apply dark:bg-color-primary dark:hover:bg-color-primary-variant dark:hover:text-text-light py-2 px-6 bg-color-bg-primary text-text-light hover:text-text-light-variant rounded-md font-light transition-all duration-500 2xl:py-3 2xl:px-7 2xl:text-lg 3xl:p-4 3xl:px-8 3xl:text-2xl;
+}
+.social-btn {
+  @apply dark:text-color-primary text-color-bg-primary hover:text-color-bg-primary-variant dark:hover:text-color-primary-variant transition-all duration-500 3xl:text-2xl;
+}
+.resume-btn {
+  @apply py-2 px-6 border dark:text-color-primary dark:border-color-primary font-light rounded-md dark:hover:bg-color-primary-variant dark:hover:text-text-light text-color-bg-primary border-color-bg-primary hover:bg-color-bg-primary hover:text-text-light-variant transition-all duration-500 2xl:py-3 2xl:px-7 2xl:text-lg 3xl:p-4 3xl:px-8 3xl:text-2xl;
+}
+
+.nav-active {
+  @apply dark:bg-color-primary-variant bg-color-bg-primary;
+}
+
+@media screen and (min-width: 1920px) {
+  .slick-next:before {
+    content: "→";
+    font-size: 30px !important;
+  }
+  .slick-prev:before {
+    content: "←";
+    font-size: 30px !important;
+  }
+  .slick-prev,
+  .slick-next {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .dard-st {
+    font-size: 40px !important;
+  }
+}

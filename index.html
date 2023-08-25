@@ -1,0 +1,411 @@
+<ul>
+  <li className="flex mt-2">
+    <div className="">
+      <ul className="list-disc list-inside text-justify">
+        {item.futureOne && (
+        <li
+          className="text-text-light-variant font-sans - serif font-300 text-sm"
+        >
+          {item.futureOne}
+        </li>
+        )} {item.futureTwo && (
+        <li
+          className="text-text-light-variant font-sans - serif font-300 text-sm"
+        >
+          {item.futureTwo}
+        </li>
+        )} {item.futurethree && (
+        <li
+          className="text-text-light-variant font-sans - serif font-300 text-sm"
+        >
+          {item.futurethree}
+        </li>
+        )} {item.futureFour && (
+        <li
+          className="text-text-light-variant font-sans - serif font-300 text-sm"
+        >
+          {item.futureFour}
+        </li>
+        )}
+      </ul>
+    </div>
+  </li>
+</ul>
+
+<div
+  className="bg-color-bg-primary-variant border border-color-bg-primary-variant hover:bg-transparent transition-all duration-500 rounded-xl p-3 grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-5"
+  key="{index}"
+>
+  <div>
+    <image
+      src="{item.photo}"
+      width="{100}"
+      height="{100}"
+      className="w-[100%] h-[200px] lg:h-[300px] object-cover"
+      alt="project"
+    />
+  </div>
+  <div>
+    <h3 className="text-md font-sans - serif font-medium text-text-light">
+      {item.projectTitle}
+    </h3>
+    <ul>
+      <li className="flex mt-2">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-5 h-5 inline text-color-primary-variant"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4.5 12.75l6 6 9-13.5"
+            />
+          </svg>
+          <span
+            className="mx-1 text-text-light-variant font-sans - serif font-300 text-sm"
+          >
+            Frontend:
+          </span>
+          <p
+            className="text-text-light-variant font-sans - serif font-300 text-sm "
+          >
+            {item.frondEndDesc}
+          </p>
+        </div>
+      </li>
+      <li className="flex mt-2">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-5 h-5 inline text-color-primary-variant"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4.5 12.75l6 6 9-13.5"
+            />
+          </svg>
+          <span
+            className="mx-1 text-text-light-variant font-sans - serif font-300 text-sm"
+          >
+            Backend:
+          </span>
+          <p
+            className="text-text-light-variant font-sans - serif font-300 text-sm "
+          >
+            {item.backEndDesc}
+          </p>
+        </div>
+      </li>
+    </ul>
+
+    <h3 className="mt-2 text-md font-sans - serif font-medium text-text-light">
+      Project Futures
+    </h3>
+    <ul>
+      <li className="flex mt-2">
+        <div className="">
+          <ul>
+            <li className="flex mt-2">
+              <div className="ml-5">
+                <ul
+                  className="list-disc list-outside text-justify flex flex-col gap-1"
+                >
+                  {item.futureOne && (
+                  <li
+                    className="text-text-light-variant font-sans - serif font-300 text-sm"
+                  >
+                    {item.futureOne}
+                  </li>
+                  )}{" "} {item.futureTwo && (
+                  <li
+                    className="text-text-light-variant font-sans - serif font-300 text-sm"
+                  >
+                    {item.futureTwo}
+                  </li>
+                  )}{" "} {item.futurethree && (
+                  <li
+                    className="text-text-light-variant font-sans - serif font-300 text-sm"
+                  >
+                    {item.futurethree}
+                  </li>
+                  )}{" "} {item.futureFour && (
+                  <li
+                    className="text-text-light-variant font-sans - serif font-300 text-sm"
+                  >
+                    {item.futureFour}
+                  </li>
+                  )}
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+
+    <div className="flex flex-wrap justify-center gap-5 mt-4">
+      <a href="{item.liveSite}" className="flex gap-1">
+        <span
+          className=" text-color-primary-variant font-sans - serif font-300 text-xs sm:text-sm"
+        >
+          Live Site
+        </span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-3 h-3 sm:w-4 sm:h-4 text-color-primary-variant"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+          />
+        </svg>
+      </a>
+      <a href="{item.clientCode}" className="flex gap-1">
+        <span
+          className=" text-color-primary-variant font-sans - serif font-300 text-xs sm:text-sm"
+        >
+          Client Code
+        </span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-3 h-3 sm:w-4 sm:h-4 text-color-primary-variant"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+          />
+        </svg>
+      </a>
+      <a href="{item.serverCode}" className="flex gap-1">
+        <span
+          className=" text-color-primary-variant font-sans - serif font-300 text-xs sm:text-sm"
+        >
+          Server Code
+        </span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-3 h-3 sm:w-4 sm:h-4 text-color-primary-variant"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div
+  className="bg-color-bg-primary-variant border border-color-bg-primary-variant hover:bg-transparent transition-all duration-500 rounded-xl p-3 flex gap-5"
+  key="{index}"
+>
+  <div>
+    <image
+      src="{item.photo}"
+      width="{100}"
+      height="{100}"
+      className="w-[100%] h-[200px] lg:h-[300px] object-cover"
+      alt="project"
+    />
+  </div>
+  <div>
+    <h3 className="text-md font-sans - serif font-medium text-text-light">
+      {item.projectTitle}
+    </h3>
+    <ul>
+      <li className="flex mt-2">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-5 h-5 inline text-color-primary-variant"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4.5 12.75l6 6 9-13.5"
+            />
+          </svg>
+          <span
+            className="mx-1 text-text-light-variant font-sans - serif font-300 text-sm"
+          >
+            Frontend:
+          </span>
+          <p
+            className="text-text-light-variant font-sans - serif font-300 text-sm "
+          >
+            {item.frondEndDesc}
+          </p>
+        </div>
+      </li>
+      <li className="flex mt-2">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-5 h-5 inline text-color-primary-variant"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4.5 12.75l6 6 9-13.5"
+            />
+          </svg>
+          <span
+            className="mx-1 text-text-light-variant font-sans - serif font-300 text-sm"
+          >
+            Backend:
+          </span>
+          <p
+            className="text-text-light-variant font-sans - serif font-300 text-sm "
+          >
+            {item.backEndDesc}
+          </p>
+        </div>
+      </li>
+    </ul>
+
+    <h3 className="mt-2 text-md font-sans - serif font-medium text-text-light">
+      Project Futures
+    </h3>
+    <ul>
+      <li className="flex mt-2">
+        <div className="">
+          <ul>
+            <li className="flex mt-2">
+              <div className="ml-5">
+                <ul
+                  className="list-disc list-outside text-justify flex flex-col gap-1"
+                >
+                  {item.futureOne && (
+                  <li
+                    className="text-text-light-variant font-sans - serif font-300 text-sm"
+                  >
+                    {item.futureOne}
+                  </li>
+                  )}{" "} {item.futureTwo && (
+                  <li
+                    className="text-text-light-variant font-sans - serif font-300 text-sm"
+                  >
+                    {item.futureTwo}
+                  </li>
+                  )}{" "} {item.futurethree && (
+                  <li
+                    className="text-text-light-variant font-sans - serif font-300 text-sm"
+                  >
+                    {item.futurethree}
+                  </li>
+                  )}{" "} {item.futureFour && (
+                  <li
+                    className="text-text-light-variant font-sans - serif font-300 text-sm"
+                  >
+                    {item.futureFour}
+                  </li>
+                  )}
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+
+    <div className="flex flex-wrap justify-center gap-5 mt-4">
+      <a href="{item.liveSite}" className="flex gap-1">
+        <span
+          className=" text-color-primary-variant font-sans - serif font-300 text-xs sm:text-sm"
+        >
+          Live Site
+        </span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-3 h-3 sm:w-4 sm:h-4 text-color-primary-variant"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+          />
+        </svg>
+      </a>
+      <a href="{item.clientCode}" className="flex gap-1">
+        <span
+          className=" text-color-primary-variant font-sans - serif font-300 text-xs sm:text-sm"
+        >
+          Client Code
+        </span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-3 h-3 sm:w-4 sm:h-4 text-color-primary-variant"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+          />
+        </svg>
+      </a>
+      <a href="{item.serverCode}" className="flex gap-1">
+        <span
+          className=" text-color-primary-variant font-sans - serif font-300 text-xs sm:text-sm"
+        >
+          Server Code
+        </span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-3 h-3 sm:w-4 sm:h-4 text-color-primary-variant"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
